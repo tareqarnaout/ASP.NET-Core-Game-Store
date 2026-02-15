@@ -36,7 +36,7 @@ public static class GameEndPoints
                 game);// 3. Response body
         });
 
-        group.MapPut("/{id}", (int id, CreateGameDto temp) =>s
+        group.MapPut("/{id}", (int id, CreateGameDto temp) =>
         {
             var index = games.FindIndex(game => id == game.Id);
             if (index == -1)
