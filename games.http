@@ -1,0 +1,30 @@
+GET http://localhost:5049
+
+###
+Get http://localhost:5049/games/1
+
+###
+
+POST http://localhost:5049/games
+Content-Type: application/json
+
+{
+    "Name" : "test",
+    "Genre" : "idk",
+    "Price" : 15.0,
+    "ReleaseDate" : "2023-10-02"
+}
+
+###
+Put http://localhost:5049/games/87
+Content-Type: application/json
+
+{
+    "Name" : "updated Game",
+    "Genre" : "idk",
+    "Price" : 55.0,
+    "ReleaseDate" : "2026-10-02"
+}
+
+### 
+DELETE http://localhost:5049/games/1
